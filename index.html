@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062) -->
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Love at First Site</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+  :root {
+    --core_colour: black;
+    --secondary_colour: black;
+    --core_colour: black;
+    --text_heading_colour: black;
+    --text_sub_colour: black;
+    --text_p_colour: black;
+
+    /*backgroundcolor: #ffdddd  pale red (pink)*/
+    /*h1 #757575  light grey*/
+    /*img-text-area - w3-text-white #FFFFFF*/
+    /*img-background    rgba(90, 10, 54, 0.4)*/
+    /*w3-red button*/
+    /*w3-black button */
+  }
+</style>
+<link rel="stylesheet" href="./wedding_website_files/w3.css">
+<link rel="stylesheet" href="./wedding_website_files/fonts.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+  body,h1,h2{font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  p {line-height: 2}
+  .bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  /*.bgimg {background-image: url("./wedding_website_files/wedding_couple.jpg")}*/
+
+  .bgimg {background-image: url("./wedding_website_files/flowers-3.jpg");}
+  .bgimg2 {background-image: url("./wedding_website_files/flowers-6.jpg");}
+
+  img {width:70%;}
+  @media only screen and (max-width: 700px) {
+    .bgimg {
+      background-image: url("./wedding_website_files/flowers-3.jpg");
+      /*filter: brightness(80%) grayscale(60%);*/
+    }
+    /*.head-text {top: 75%;}*/
+    /*.m-head-h1 { line-height: 1; text-shadow: 2px 2px #444444; }*/
+    img {width:100%;}
+  }
+
+
+
+  /*https://source.unsplash.com/1000x660/?wedding,flowers*/
+  
+</style>
+</head>
+<body>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-text-white w3-center head-text">
+    <h1 class="w3-jumbo m-head-h1">Sam &amp; Charlotte</h1>
+    <h2>Are getting married</h2>
+    <h2><b>04.03.2020</b></h2>
+    <!-- RSVP section -->
+    <div class="w3-container w3-padding-64 w3-center w3-wide" id="rsvp">
+      <p class="w3-large">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+      </p>
+    </div>
+  </div>
+</header>
+<!-- https://www.facebook.com/steph.churcher/videos/795987707086262/ -->
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+  <div class="w3-bar w3-white w3-center w3-padding w3-opacity-min w3-hover-opacity-off">
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button">Home</a>
+    <a href="#us" style="width:25%" class="w3-bar-item w3-button">Sam &amp; Charlotte</a>
+    <a href="#wedding" style="width:25%" class="w3-bar-item w3-button">Wedding</a>
+    <a href="#rsvp" style="width:25%" class="w3-bar-item w3-button w3-hover-black">RSVP</a>
+  </div>
+</div>
+
+<!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us" style="display:block;">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
+    <!-- <h1 class="w3-center w3-text-grey">YOU ARE INVITED</b></h1> -->
+    <div  class="w3-center">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+    </div>
+    
+    <!-- <img class="w3-round w3-grayscale-min" src="./wedding_website_files/wedding_couple2.jpg" style="width:100%;margin:32px 0"> -->
+    <p><i>Some fo yuo may know, We are getting married! lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+  </div>
+</div>
+
+
+<!-- AUDIO version -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us" style="display:none;">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
+    <div  class="w3-center">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+      <audio controls>
+        <source src="./wedding_website_files/video.mp4" type="video/mp4">
+      </audio>
+    </div>
+    <p><i>Some fo yuo may know, We are getting married! lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+      laboris nisi ut aliquip ex ea commodo consequat.</i>
+    </p><br>
+    <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+  </div>
+</div>
+
+<!-- Video section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us" style="display:none;>
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
+    <div  class="w3-center">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+    </div>
+    <div class="w3-row">
+      <h1 class="w3-center w3-text-grey"><b>This might have been the moment</b></h1>
+      <div class="w3-half w3-padding-32 ">
+        <div  class="w3-center ">
+          <video class="" width="auto" height="auto" controls>
+            <source src="./wedding_website_files/video.mp4" type="video/mp4">
+            <source src="./wedding_website_files/video.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="w3-half w3-padding-32">
+        <p><i>Some fo yuo may know, We are getting married! lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</i>
+        </p><br>
+        <p class="w3-center"><a href="#wedding" class="w3-button w3-black w3-round w3-padding-large w3-large">Wedding Details</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Background photo -->
+<style type="text/css">
+  .bgimg2 {
+    height: 100%;
+    overflow: hidden;
+    color: #FFFFFF;
+
+  }
+  .colourtextbox {
+      /*background: rgba(90, 10, 54, 0.4);*/
+      background: rgba(90, 10, 54, 0.4);
+      background: rgba(89, 32, 64, 0.57);
+
+      /*padding: 0px 60px 0px 60px;*/
+      /*width: 100%;*/
+  }
+</style>
+<div class="w3-display-container bgimg2" style="display:none;">
+  <!-- <div class="bgimg2 colourtextbox"> -->
+  <div class="bgimg2 w3-grayscale-min">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h1 class="w3-jumbo">You Are Invited</h1><br>
+      <!-- <h2>Of course...</h2> -->
+    </div>
+  </div>
+</div>
+
+<!-- IMG SEP WITH VIDEO  -->
+<div class="w3-display-container bgimg2" style="display:block;">
+  <!-- <div class="bgimg2 colourtextbox"> -->
+  <div class="bgimg2 w3-grayscale-min">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <video class="w3-round-large" width="auto" height="auto" controls>
+        <source src="./wedding_website_files/video.mp4" type="video/mp4">
+        <source src="./wedding_website_files/video.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+      <!-- <h2>Of course...</h2> -->
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Photo Filler -->
+<div class="w3-container w3-pale-red w3-padding-64" id="us">
+  <div class="w3-content">
+    <div  class="w3-center">
+      <img class="w3-round w3-grayscale-min" src="./wedding_website_files/photo1.1.jpg" style="margin:32px 0">
+    </div>
+  </div>
+</div>
+
+<!-- Wedding information -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+  <div class="w3-content">
+    <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+    <img class="w3-round-large w3-grayscale-min" src="./wedding_website_files/wedding_location.jpg" style="margin:64px 0">
+    <div class="w3-row">
+      <div class="w3-half">
+        <h2>When</h2>
+        <p>Wedding Ceremony - 2:00pm</p>
+        <p>Reception &amp; Dinner - 5:00pm</p>
+      </div>
+      <div class="w3-half">
+        <h2>Where</h2>
+        <p>Some place, Rose Garden </p>
+        <p>Some where, 224 Example st, Wellington</p>
+      </div>
+    </div>
+    <div class="w3-row">
+      <p><i>Additional Information: We are getting married lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+      occaecat cupidatat non proid</i></p>
+    </div>
+  </div>
+</div>
+
+<!-- Photo Filler -->
+<div class="w3-container w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <div  class="w3-center">
+      <img class="w3-round" src="./wedding_website_files/photo2.1.jpg" style="margin:32px 0">      
+    </div>
+  </div>
+</div>
+
+<!-- RSVP section -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+  <h1 class="w3-text-black">HOPE YOU CAN MAKE IT!</h1>
+  <p class="w3-large">Kindly Respond By January, 2020</p>
+  <p class="w3-xlarge">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+  </p>
+</div>
+
+<!-- RSVP modal -->
+<style type="text/css">
+  form input {font-size: 12px;}
+</style>
+<div id="id01" class="w3-modal" >
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">CAN YOU COME?</h1>
+      <p>We really hope you can make it.</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="Your name" name="name">
+        <input class="w3-input w3-border" type="text" placeholder="Optional plus one name" name="name">
+      </form>
+      <p><i>Sincerely, Sam &amp; Charlotte</i></p>
+      <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none';document.getElementById('id02').style.display='block'" type="button" class="w3-button w3-block w3-red w3-opacity">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none';document.getElementById('id03').style.display='block'" type="button" class="w3-button w3-block w3-black w3-opacity">Can't come</button>
+        </div>
+      </div>
+      <br>
+      <p onclick="document.getElementById('id01').style.display='none'" class="" style="text-decoration: underline;cursor: pointer;letter-spacing: 0px;">Close</p>
+      <div class="w3-wide">
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-- RSVP modal -->
+<div id="id02" class="w3-modal" >
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">Thanks!</h1>
+      <i>We look forward to seeing you!</i>
+      <i>Date: 04/03/2020</i>
+      <p>Do you need reminders?</p>
+      <form>
+        <input class="w3-input w3-border" type="text" placeholder="by Email?" name="name">
+        <input class="w3-input w3-border" type="text" placeholder="by Text" name="name">
+      </form>
+      <p style="line-height: 1.2;">We will also keep you upto date on with Facebook messenger</p>
+      <p><i>Sincerely, Sam &amp; Charlotte</i></p>
+      <!-- <div class="w3-row">
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-green">Going</button>
+        </div>
+        <div class="w3-half">
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-block w3-red">Can't come</button>
+        </div>
+      </div> -->
+      <br>
+      <p onclick="document.getElementById('id02').style.display='none'" class="" style="text-decoration: underline;cursor: pointer;letter-spacing: 0px;">Close</p>
+      <div class="w3-wide">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RSVP modal -->
+<div id="id03" class="w3-modal" >
+  <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+    <div class="w3-container w3-white w3-center">
+      <h1 class="w3-wide">I'm sorry to here that!</h1>
+      <i>Don't worry we can catch up another time.</i>
+      <p style="line-height: 1.2;">Let us know if anything changes before Jan, 2020.</p>
+      <p><i>Sincerely, Sam &amp; Charlotte</i></p>
+      <br>
+      <p onclick="document.getElementById('id03').style.display='none'" class="" style="text-decoration: underline;cursor: pointer;letter-spacing: 0px;">Close</p>
+      <div class="w3-wide">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Photo Filler -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey"><b>A few happy photos</b></h1>
+    <div  class="w3-center">
+      <img class="w3-round" src="./wedding_website_files/photo4.jpg" style="margin:5px 0">
+      <img class="w3-round" src="./wedding_website_files/photo3.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo3.5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo8.jpg" style="margin:5px 0">
+      
+      <img class="w3-round " src="./wedding_website_files/photo4.5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo9.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo6.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./wedding_website_files/photo7.jpg" style="margin:5px 0">      
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="https://thewolf.co.nz" title="W3.CSS" target="_blank" class="w3-hover-text-green">thewolf.</a><i><br> Software & Innovation.</i></p>
+</footer>
+<div class="w3-hide-small" style="margin-bottom:32px">&nbsp;</div>
+
+<script>
+// CLICK AWAY FROM MODEL WHEN CLICK IS NOT ON MODEL
+// Get the modal
+var modal = document.getElementById('id01');
+var modal_2 = document.getElementById('id02');
+var modal_3 = document.getElementById('id03');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) { modal.style.display = "none"; }
+  if (event.target == modal_2) { modal_2.style.display = "none"; }
+  if (event.target == modal_3) { modal_3.style.display = "none"; }
+}
+
+
+</script>
+
+<script type="text/javascript">
+  $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
+  });
+</script>
+</body>
+</html>
