@@ -7,6 +7,48 @@
   <title>Love at First Site</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Wedding" content="Wedding App">
+<link rel="manifest" href="/manifest.json">
+<meta name="description" content="Sam & Charlotte's Wedding">
+<link rel="stylesheet" href="./assets/w3.css">
+<link rel="stylesheet" href="./assets/fonts.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta name="theme-color" content="#2F3BA2" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Sam & Char Wedding">
+<link rel="apple-touch-icon" href="/assets/icons/icon-152x152.png">
+
+<style>
+  body,h1,h2{font-family: "Raleway", sans-serif}
+  body, html {height: 100%}
+  p {line-height: 2}
+  .bgimg, .bgimg2 {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  /*.bgimg {background-image: url("./assets/wedding_couple.jpg")}*/
+
+  .bgimg {background-image: url("./assets/flowers-3.jpg");}
+  .bgimg2 {background-image: url("./assets/flowers-6.jpg");}
+
+  img {width:70%;}
+  @media only screen and (max-width: 700px) {
+    .bgimg {
+      background-image: url("./assets/flowers-3.jpg");
+      /*filter: brightness(80%) grayscale(60%);*/
+    }
+    /*.head-text {top: 75%;}*/
+    /*.m-head-h1 { line-height: 1; text-shadow: 2px 2px #444444; }*/
+    img {width:100%;}
+  }
+  header #butInstall {
+    background: url(/assets/install.svg) center center no-repeat;
+  }
+  /*https://source.unsplash.com/1000x660/?wedding,flowers*/
+  
+</style>
 <style type="text/css">
   :root {
     --core_colour: black;
@@ -24,39 +66,6 @@
     /*w3-black button */
   }
 </style>
-<link rel="stylesheet" href="./wedding_website_files/w3.css">
-<link rel="stylesheet" href="./wedding_website_files/fonts.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<style>
-  body,h1,h2{font-family: "Raleway", sans-serif}
-  body, html {height: 100%}
-  p {line-height: 2}
-  .bgimg, .bgimg2 {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-  }
-  /*.bgimg {background-image: url("./wedding_website_files/wedding_couple.jpg")}*/
-
-  .bgimg {background-image: url("./wedding_website_files/flowers-3.jpg");}
-  .bgimg2 {background-image: url("./wedding_website_files/flowers-6.jpg");}
-
-  img {width:70%;}
-  @media only screen and (max-width: 700px) {
-    .bgimg {
-      background-image: url("./wedding_website_files/flowers-3.jpg");
-      /*filter: brightness(80%) grayscale(60%);*/
-    }
-    /*.head-text {top: 75%;}*/
-    /*.m-head-h1 { line-height: 1; text-shadow: 2px 2px #444444; }*/
-    img {width:100%;}
-  }
-
-
-
-  /*https://source.unsplash.com/1000x660/?wedding,flowers*/
-  
-</style>
 </head>
 <body>
 <!-- Header / Home-->
@@ -72,6 +81,7 @@
       </p>
     </div>
   </div>
+  <button id="butInstall" aria-label="Install" hidden></button>
 </header>
 <!-- https://www.facebook.com/steph.churcher/videos/795987707086262/ -->
 <!-- Navbar (sticky bottom) -->
@@ -90,10 +100,10 @@
     <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
     <!-- <h1 class="w3-center w3-text-grey">YOU ARE INVITED</b></h1> -->
     <div  class="w3-center">
-      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./assets/core-crop.jpg" style="margin:32px 0;">
     </div>
     
-    <!-- <img class="w3-round w3-grayscale-min" src="./wedding_website_files/wedding_couple2.jpg" style="width:100%;margin:32px 0"> -->
+    <!-- <img class="w3-round w3-grayscale-min" src="./assets/wedding_couple2.jpg" style="width:100%;margin:32px 0"> -->
     <p><i>Some fo yuo may know, We are getting married! lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
       occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
       laboris nisi ut aliquip ex ea commodo consequat.</i>
@@ -108,9 +118,9 @@
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
     <div  class="w3-center">
-      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./assets/core-crop.jpg" style="margin:32px 0;">
       <audio controls>
-        <source src="./wedding_website_files/video.mp4" type="video/mp4">
+        <source src="./assets/video.mp4" type="video/mp4">
       </audio>
     </div>
     <p><i>Some fo yuo may know, We are getting married! lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -126,15 +136,15 @@
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>Sam &amp; Charlotte</b></h1>
     <div  class="w3-center">
-      <img id="vid" class="w3-round w3-grayscale-min" src="./wedding_website_files/core-crop.jpg" style="margin:32px 0;">
+      <img id="vid" class="w3-round w3-grayscale-min" src="./assets/core-crop.jpg" style="margin:32px 0;">
     </div>
     <div class="w3-row">
       <h1 class="w3-center w3-text-grey"><b>This might have been the moment</b></h1>
       <div class="w3-half w3-padding-32 ">
         <div  class="w3-center ">
           <video class="" width="auto" height="auto" controls>
-            <source src="./wedding_website_files/video.mp4" type="video/mp4">
-            <source src="./wedding_website_files/video.ogg" type="video/ogg">
+            <source src="./assets/video.mp4" type="video/mp4">
+            <source src="./assets/video.ogg" type="video/ogg">
           Your browser does not support the video tag.
           </video>
         </div>
@@ -185,8 +195,8 @@
   <div class="bgimg2 w3-grayscale-min">
     <div class="w3-display-middle w3-text-white w3-center">
       <video class="w3-round-large" width="auto" height="auto" controls>
-        <source src="./wedding_website_files/video.mp4" type="video/mp4">
-        <source src="./wedding_website_files/video.ogg" type="video/ogg">
+        <source src="./assets/video.mp4" type="video/mp4">
+        <source src="./assets/video.ogg" type="video/ogg">
         Your browser does not support the video tag.
       </video>
       <!-- <h2>Of course...</h2> -->
@@ -200,7 +210,7 @@
 <div class="w3-container w3-pale-red w3-padding-64" id="us">
   <div class="w3-content">
     <div  class="w3-center">
-      <img class="w3-round w3-grayscale-min" src="./wedding_website_files/photo1.1.jpg" style="margin:32px 0">
+      <img class="w3-round w3-grayscale-min" src="./assets/photo1.1.jpg" style="margin:32px 0">
     </div>
   </div>
 </div>
@@ -209,7 +219,7 @@
 <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
   <div class="w3-content">
     <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
-    <img class="w3-round-large w3-grayscale-min" src="./wedding_website_files/wedding_location.jpg" style="margin:64px 0">
+    <img class="w3-round-large w3-grayscale-min" src="./assets/wedding_location.jpg" style="margin:64px 0">
     <div class="w3-row">
       <div class="w3-half">
         <h2>When</h2>
@@ -233,7 +243,7 @@
 <div class="w3-container w3-pale-red w3-grayscale-min" id="us">
   <div class="w3-content">
     <div  class="w3-center">
-      <img class="w3-round" src="./wedding_website_files/photo2.1.jpg" style="margin:32px 0">      
+      <img class="w3-round" src="./assets/photo2.1.jpg" style="margin:32px 0">      
     </div>
   </div>
 </div>
@@ -329,16 +339,16 @@
   <div class="w3-content">
     <h1 class="w3-center w3-text-grey"><b>A few happy photos</b></h1>
     <div  class="w3-center">
-      <img class="w3-round" src="./wedding_website_files/photo4.jpg" style="margin:5px 0">
-      <img class="w3-round" src="./wedding_website_files/photo3.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo3.5.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo8.jpg" style="margin:5px 0">
+      <img class="w3-round" src="./assets/photo4.jpg" style="margin:5px 0">
+      <img class="w3-round" src="./assets/photo3.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo3.5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo8.jpg" style="margin:5px 0">
       
-      <img class="w3-round " src="./wedding_website_files/photo4.5.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo5.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo9.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo6.jpg" style="margin:5px 0">
-      <img class="w3-round " src="./wedding_website_files/photo7.jpg" style="margin:5px 0">      
+      <img class="w3-round " src="./assets/photo4.5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo5.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo9.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo6.jpg" style="margin:5px 0">
+      <img class="w3-round " src="./assets/photo7.jpg" style="margin:5px 0">      
     </div>
     
     
@@ -378,6 +388,17 @@ window.onclick = function(event) {
           }, 1000);
       }
   });
+</script>
+<script>
+  // CODELAB: Register service worker.
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js')
+          .then((reg) => {
+            console.log('Service worker registered.', reg);
+          });
+    });
+  }
 </script>
 </body>
 </html>
