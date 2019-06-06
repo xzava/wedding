@@ -4,7 +4,11 @@ const DATA_CACHE_NAME = 'data-cache-v2';
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-  'index.html'
+  'index.html',
+  './',
+  './assets/w3.css',
+  './assets/fonts.css',
+  './assets/icons/icon-152x152.png',
 ];
 
 self.addEventListener('install', (evt) => {
