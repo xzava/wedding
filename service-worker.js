@@ -4,31 +4,7 @@ const DATA_CACHE_NAME = 'data-cache-v2';
 
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
-'./',
-'./index.html',
-'./assets/install.js',
-'./assets/install.svg',
-'./assets/w3.css',
-'./assets/fonts.css',
-'./assets/icons/icon-152x152.png',
-'./assets/wedding_couple.jpg',
-'./assets/flowers-3.jpg',
-'./assets/flowers-6.jpg',
-'./assets/flowers-3.jpg',
-'./assets/core-crop.jpg',
-'./assets/wedding_couple2.jpg',
-'./assets/photo1.1.jpg',
-'./assets/wedding_location.jpg',
-'./assets/photo2.1.jpg',
-'./assets/photo4.jpg',
-'./assets/photo3.jpg',
-'./assets/photo3.5.jpg',
-'./assets/photo8.jpg',
-'./assets/photo4.5.jpg',
-'./assets/photo5.jpg',
-'./assets/photo9.jpg',
-'./assets/photo6.jpg',
-'./assets/photo7.jpg'
+  'index.html'
 ];
 
 self.addEventListener('install', (evt) => {
