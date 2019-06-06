@@ -2,7 +2,7 @@
 const CACHE_NAME = 'static-cache-v2';
 const DATA_CACHE_NAME = 'data-cache-v1';
 
-console.log(000)
+console.log(000);
 // CODELAB: Add list of files to cache here.
 const FILES_TO_CACHE = [
   '/',
@@ -52,7 +52,7 @@ const FILES_TO_CACHE = [
 ];
 
 self.addEventListener('install', (evt) => {
-  console.log(00)	
+  console.log(00);
   console.log('[ServiceWorker] Install');
   // CODELAB: Precache static resources here.
   evt.waitUntil(
@@ -61,12 +61,12 @@ self.addEventListener('install', (evt) => {
         return cache.addAll(FILES_TO_CACHE);
       })
   );
-  console.log(0)
+  console.log(0);
   self.skipWaiting();
 });
 
 self.addEventListener('activate', (evt) => {
-  console.log(1)
+  console.log(1);
   console.log('[ServiceWorker] Activate');
   // CODELAB: Remove previous cached data from disk.
   evt.waitUntil(
@@ -79,12 +79,12 @@ self.addEventListener('activate', (evt) => {
         }));
       })
   );
-  console.log(2)
+  console.log(2);
   self.clients.claim();
 });
 
 self.addEventListener('fetch', (evt) => {
-	console.log(3)
+	console.log(3);
 	if (evt.request.url.includes('/forecast/')) {
 	  console.log('[Service Worker] Fetch (data)', evt.request.url);
 	  evt.respondWith(
@@ -104,7 +104,7 @@ self.addEventListener('fetch', (evt) => {
 	  return;
 	}
 	evt.respondWith(
-	    console.log(4)
+	    console.log(4);
 	    caches.open(CACHE_NAME).then((cache) => {
 	      return cache.match(evt.request)
 	          .then((response) => {
@@ -113,4 +113,4 @@ self.addEventListener('fetch', (evt) => {
 	    })
 	);
 });
-console.log(5)
+console.log(5);
