@@ -45,7 +45,6 @@ const FILES_TO_CACHE = [
   '/assets/photo2.1.jpg',
   '/assets/photo1.1.jpg',
   '/assets/flowers-6.jpg',
-  '/assets/core2.jpg',
   '/assets/core-1.jpg',
   '/assets/core-crop.jpg',
   '/assets/flowers-7.jpg',
