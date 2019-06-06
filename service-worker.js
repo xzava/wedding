@@ -26,6 +26,7 @@ const FILES_TO_CACHE = [
   '/',
   '/index.html',
   '/assets/install.js',
+  '/assets/install.svg',
   '/assets/core-crop.jpg',
   '/assets/flowers-dark.jpg',
   '/assets/flowers5.jpeg',
