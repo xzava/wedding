@@ -34,31 +34,26 @@ self.addEventListener('activate', (evt) => {
   self.clients.claim();
 });
 
-self.addEventListener('fetch', (evt) => {
-	if (evt.request.url.includes('/forecast/')) {
-	  console.log('[Service Worker] Fetch (data)', evt.request.url);
-	  evt.respondWith(
-	      caches.open(DATA_CACHE_NAME).then((cache) => {
-	        return fetch(evt.request)
-	            .then((response) => {
-	              // If the response was good, clone it and store it in the cache.
-	              if (response.status === 200) {
-	                cache.put(evt.request.url, response.clone());
-	              }
-	              return response;
-	            }).catch((err) => {
-	              // Network request failed, try to get it from the cache.
-	              return cache.match(evt.request);
-	            });
-	      }));
-	  return;
-	}
-	evt.respondWith(
-	    caches.open(CACHE_NAME).then((cache) => {
-	      return cache.match(evt.request)
-	          .then((response) => {
-	            return response || fetch(evt.request);
-	          });
-	    })
-	);
+// The fetch handler serves responses for same-origin resources from a cache.
+// If no response is found, it populates the runtime cache with the response
+// from the network before returning it to the page.
+self.addEventListener('fetch', event => {
+  // Skip cross-origin requests, like those for Google Analytics.
+  if (event.request.url.startsWith(self.location.origin)) {
+    event.respondWith(
+      caches.match(event.request).then(cachedResponse => {
+        if (cachedResponse) {
+          return cachedResponse;
+        }
+        return caches.open(DATA_CACHE_NAME).then(cache => {
+          return fetch(event.request).then(response => {
+            // Put a copy of the response in the runtime cache.
+            return cache.put(event.request, response.clone()).then(() => {
+              return response;
+            });
+          });
+        });
+      })
+    );
+  }
 });
